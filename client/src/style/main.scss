@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(28, 28, 39);
+
+  .container_login {
+    text-align: center;
+    margin-top: 10rem;
+
+    .login_button {
+      text-align: center;
+      background-color: #056952;
+      color: lightgrey;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    background: #056952;
+    margin-bottom: 5rem;
+    color: lightgray;
+    text-transform: uppercase;
+  }
+
+  .container_results {
+    .search_box {
+      margin: auto;
+      width: 20rem;
+      margin-bottom: 5rem;
+
+      input {
+        width: 100%;
+        height: 2.5rem;
+        background-color: rgb(28, 28, 39);
+        border: 3px solid #056952;
+        border-radius: 0.5rem;
+        padding-left: 0.5rem;
+        font-weight: bold;
+        color: lightgray;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .tracks_box {
+      display: flex;
+      flex-flow: wrap;
+      gap: 2rem;
+      margin: 3rem;
+      justify-content: center;
+      margin-bottom: 5.9rem;
+
+      .tracks_container {
+        width: 18rem;
+        height: 25rem;
+        text-align: center;
+        color: lightgray;
+        background-color: rgb(40, 40, 50);
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          background-color: rgb(70, 70, 83);
+        }
+
+        img {
+          margin-top: 2rem;
+          margin-bottom: 4rem;
+          width: 15rem;
+        }
+
+        .tracks_info {
+          text-align: left;
+          margin-left: 1.5rem;
+
+          .title {
+            color: grey;
+          }
+        }
+      }
+
+      .lyrics_box {
+        width: 18rem;
+        color: lightgray;
+        line-height: 2rem;
+      }
+    }
+
+    hr {
+      width: 75%;
+      margin: auto;
+      opacity: 0.2;
+    }
+
+    .top_album {
+      h2 {
+        text-transform: uppercase;
+        color: lightgray;
+      }
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
