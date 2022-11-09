@@ -4,6 +4,7 @@ import SpotifyWebApi from "spotify-web-api-node";
 import TrackSearchResult from "./TrackSearchResult";
 import Player from "./Player";
 import axios from "axios";
+import TopAlbums from "./TopAlbums";
 
 const SpotifyApi = new SpotifyWebApi({
   clientId: "3966daf652cd4879b82b784315cc42ce",
@@ -100,7 +101,7 @@ function Dashboard({ code }) {
         <div className="tracks_box top_album">
           <h2>Top albums</h2>
           {topAlbum.map((track) => (
-            <TrackSearchResult
+            <TopAlbums
               track={track}
               key={track.uri}
               chooseTrack={chooseTrack}
